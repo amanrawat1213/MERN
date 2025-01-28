@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and input tags</title>
+</head>
+
+<body>
+    <p>Introduction to HTML Forms
+        <br>
+        HTML forms are essential for collecting user input on web pages. Whether it's a search bar, a login screen, or a
+        multi-field registration form, HTML forms play a key role in web interactions. They enable users to submit data,
+        which can be processed, stored, or returned by a server.
+        <br>
+
+        Why Do We Use Forms?
+        <br>
+        Forms serve as the gateway between the user and the server, allowing for dynamic, interactive web experiences.
+        They are crucial for tasks such as user authentication, data submission, feedback collection, and more. Simply
+        put, forms make websites more engaging and functional.
+        <br>
+
+        HTML Forms Structure:
+        <br>
+        The fundamental structure of an HTML form is encapsulated within the
+    <form> tags. Inside these tags, you'll place various form controls like text fields, checkboxes, radio buttons, and
+        buttons for submitting the form.</p>
+        <p>How to Use Form Controls?
+            <br>
+            The input tag is commonly used to create form controls. The attributes of this tag define the control's
+            behavior.
+            <br>
+            The "type" attribute specifies the type of input control (e.g., text, password, checkbox).
+            <br>
+
+            The "name" attribute is used for identifying the control, especially when the data is sent to the server.
+            <br>
+
+            The "value" attribute sets a default value for the control, which the user can overwrite.
+        </p>
+        <form action="">
+            <div>
+                <label>Enter your user name</label>
+                <input type="text" placeholder="Enter your username">
+                <!--You can provide lable for a placeholder in order to make it more-->
+            </div>
+            <div>
+                <label>Gender:</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender"
+                    value="female"><!--The name is written same so that only one choice could be selected at a time-->
+                <label for="female">Female</label>
+            </div>
+            <div>
+                <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+                <label for="subscribe">Subscribe to newsletter</label>
+            </div>
+            <p>Textarea & Select
+                In addition to the basic input types, HTML forms offer other controls like textarea and select for
+                richer user interaction. These elements allow for more complex data collection and provide a better user
+                experience. In this blog, we will dive into these form controls and provide examples.
+
+                The Textarea Element
+                The textarea element is used when you need multiline text input from the user. This is particularly
+                useful for comments, reviews, or any other type of input where the length is unpredictable.
+                The rows and cols attributes define the visible dimensions of the textarea.
+            </p>
+            <div>
+                <label for="comment">Enter your comment</label>
+                <br>
+                <textarea id="comment" name="comment" rows="4" cols="50"></textarea>
+            </div>
+            <p>The Select Element
+                The select element creates a dropdown menu for the user. It is useful when you have a predefined list of
+                options for the user to choose from.</p>
+                <div>
+                    <select name="fruits">
+                        <option value="apple">Apple</option>
+                        <option value="banana">Banana</option>
+                        <option value="cherry">Cherry</option>
+                  </select>
+                </div>
+                <div>
+                    <input type="submit" value="submit">
+
+                </div>
+               
+
+        </form>
+</body>
+
+</html>
